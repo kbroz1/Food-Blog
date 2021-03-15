@@ -162,6 +162,16 @@ img:hover{
 
 }
 
+.social {
+    height:40px;
+    width:40px;
+}
+
+#ig {
+    height: 40px;
+    width:55px;
+}
+
 @media only screen and (max-width:500px) {
     label {
         display:block;
