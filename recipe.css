@@ -9,7 +9,7 @@ body{
 
 .nav {
     border-bottom: 1px solid gray;
-    color:lightslategray;
+    color:hsl(51, 88%, 68%);
     text-align: left;
     height: 70px;
     line-height:70px;
@@ -22,7 +22,7 @@ body{
 }
 
 .menu a{
-    color: lightslategray;
+    color: hsl(51, 88%, 68%);
     text-decoration:none;
     margin: 0 10px;
     line-height:70px;
@@ -51,6 +51,7 @@ h1 {
     margin-right: 20px;
     font-size: 22px;
     font-style:italic;
+
 }
 
 h6 {
@@ -71,37 +72,28 @@ h6:hover{
     
 }
 
-.container1, .container2, .container3, .container4, .container5 {
+
+
+
+.container1{
+    display:flex;
+    flex-direction:row;
+    margin-left: 15%;
+}
+.container2, .container3, .container4, .container5 {
     display:flex;
     flex-direction: row;
-    
-}
-
-
-
-.container2 {
-    display:flex;
-    flex-direction: row;
-    justify-content:center;
+    justify-content:center; 
+    align-content:space-between;
 
 }
 
-.container3 {
-    display:flex;
-    flex-direction:row-reverse;
-}
-
-.container5{
-    display:flex;
-    flex-direction:row-reverse;
-}
-
-.container3 {
-    display:flex;
+.steps {
+    margin-right:50px;
 }
 
 .flex-two {
-    margin: 20px;
+    width: 40%;
    font-size:20px;
    padding: 5px;
    
@@ -148,17 +140,15 @@ img {
     height:475px;
 }
 
-img:hover{
-    border:olivedrab dashed 2px;
-    transform: translateY(30px);
-}
 
 .intropic {
     display:flex;
-    width: 300px;
-    height:320px;
+    width: 200px;
+    height:220px;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 75px;
+    margin-left: 10px;
+    margin-right:10px;
 
 }
 
@@ -173,6 +163,7 @@ img:hover{
 }
 
 @media only screen and (max-width:500px) {
+
     label {
         display:block;
         cursor:pointer;
@@ -189,5 +180,45 @@ img:hover{
     }
     #toggle:checked + .menu {
         display:block;
+        background-color:teal;
+        position: absolute;
+        width: 50%;
+        border-radius: 10%;
     }
-}
+
+    img, .intropic, .step1photo, .step2photo, .step3photo {
+        display:flex;
+        height: 100%;
+        width: 100%;
+        margin:0;
+        flex-wrap:wrap;
+    }
+
+    .container1, .container2, .container3, .container4, .container5 {
+        display:flex;
+        flex-direction: column;
+        margin: 0;
+    
+    }
+
+    .flex-two {
+        font-size: 30px;
+        margin:0;
+        width:100%;
+    }
+
+
+
+    img, .intropic, .step1photo, .step2photo, .step3photo:hover{
+        transform:none;
+    }
+
+    .steps {
+        font-size:30px;}
+
+    footer {
+display:flex;
+flex-direction:row;
+    }
+    }
+} 

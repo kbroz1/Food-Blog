@@ -22,7 +22,7 @@ h1, h4, figcaption {
 }
 
 h1{
-    font-size: 80px;
+    font-size: 60px;
 }
 
 h4{
@@ -53,6 +53,7 @@ img{
     border-radius: 50%;
     height:215px;
     width:205px;
+    margin-left: 50px;
 }
 
 .menu {
@@ -66,7 +67,7 @@ img{
     line-height:70px;
 }
 
-label {
+.label_t {
     margin: 0 40px 0 0;
     font-size: 26px;
     line-height:70px;
@@ -89,14 +90,35 @@ label {
 
 
 .form {
-    background-color:rgb(167, 228, 143);
+    background-image:url(images/watercolor.png);
     padding:10px;
-    margin-left: 40%;
+    text-align:center;
+    border-radius: 80%;
+    border: 1px double hsl(51, 88%, 68%);
+    width: 50%;
+    margin-left: 300px;
+    
+}
+
+.form h3 {
+    font-size: 30px;
+
+   
+}
+
+
+.submit {
+    font-family: 'Josefin Sans', sans-serif;
+    border: #c6a7d3 solid 1px;
+    font-size: 25px;
+    padding: 5px;
+    color:#c6a7d3;
+    background-color:#363838;
 }
 
 footer{
 text-align:center;
-background-color:hsl(0, 0%, 80%);
+background-color:hsl(51, 88%, 68%);
 padding:5px;
 }
 
@@ -116,6 +138,36 @@ padding:5px;
 
 
 @media only screen and (max-width:500px) {
+    h1 {
+        font-size: 40px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    img {
+        height: 100%;
+        width: 100%;
+        align-items: center;
+    }
+
+    .kt_img {
+        width:400px;
+        height:320px;
+    }
+
+    figure {
+        text-align:center;
+    }
+    figcaption {
+        font-size: 30px;
+        text-align:center;
+    }
+
+    .aboutktcap {
+        margin-left:50px;
+        font-size:20px;
+        
+    }
     label {
         display:block;
         cursor:pointer;
@@ -132,5 +184,17 @@ padding:5px;
     }
     #toggle:checked + .menu {
         display:block;
+        background-color:teal;
+        position: absolute;
+        width: 50%;
+        border-radius: 10%;
     }
+
+    .form {
+        width:100%;
+        margin:0;
+        font-size: 20px;
+    }
+
+  
 }
