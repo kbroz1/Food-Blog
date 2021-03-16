@@ -1,5 +1,9 @@
 body{
-   background-color: #3dbbaa;
+    background: url(images/artichokeswine.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
    font-family: 'Josefin Sans', sans-serif;
    text-align:center;
 }
@@ -20,6 +24,9 @@ h1 {
 p {
     margin-right: 25%;
     margin-left: 25%;
+    background-color: #89875C;
+    padding: 5px;
+    color:rgb(247, 246, 225);
 }
 
 p a {
@@ -49,6 +56,32 @@ label {
 #toggle {
     display:none;
 }
+
+.submit {
+    font-family: 'Josefin Sans', sans-serif;
+    border: #c6a7d3 solid 1px;
+    font-size: 25px;
+    padding: 5px;
+    color:rgb(247, 246, 225);
+    background-color:#390E05
+}
+
+h5 {
+    font-size: 20px;
+    background-color:#363018;
+    color:rgb(247, 246, 225);
+    width:fit-content;
+    margin-left: 40%;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+textarea {
+    width: 400px;
+    height:100px;
+}
+
+
 
 .social {
     height:40px;
@@ -87,4 +120,10 @@ label {
         font-size: 24px;
         margin:0;
     }
+
+    textarea {
+        height:100%;
+        width: 100%;
+    }
 }
+

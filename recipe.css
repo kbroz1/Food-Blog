@@ -57,19 +57,31 @@ h1 {
 h6 {
     text-align:center;
    background-color:olivedrab;
-    font-size: 18px;
-    padding: 2px;
+    font-size: 25px;
+    padding: 10px;
     color:papayawhip;
-
+    width:fit-content;
+    margin-left:32%;
+    margin-bottom:5px;
+    animation-name: ani;
+    animation-duration: 2s;
+    animation-delay:1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
+
+@keyframes  ani {
+    from {background-color: olivedrab;}
+    to {background-color: peru;}
+  }
 
 h6:hover{
     cursor:pointer;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-    transform: skewX(20deg);
-    background-color: peru;
     
+}
+
+a {
+    text-decoration:none;
 }
 
 
@@ -149,6 +161,7 @@ img {
     margin-top: 75px;
     margin-left: 10px;
     margin-right:10px;
+    border-radius: 10%;
 
 }
 
@@ -214,11 +227,12 @@ img {
     }
 
     .steps {
-        font-size:30px;}
+        font-size:30px;
+        color:white;}
 
     footer {
 display:flex;
 flex-direction:row;
     }
-    }
+    
 } 

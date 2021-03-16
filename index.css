@@ -48,12 +48,23 @@ img{
     width: 220px;
 }
 
+img:hover {
+    filter: blur(2px);
+    border:hsl(51, 88%, 68%) solid 5px;
+}
+
 .kt_img{
     border: 2px solid hsl(51, 88%, 68%);
     border-radius: 50%;
     height:215px;
     width:205px;
     margin-left: 50px;
+    filter:saturate(110%);
+}
+
+.kt_img:hover{
+    filter:none;
+    border: 2px solid hsl(51, 88%, 68%);
 }
 
 .menu {
@@ -118,7 +129,6 @@ img{
 
 footer{
 text-align:center;
-background-color:hsl(51, 88%, 68%);
 padding:5px;
 }
 
@@ -150,22 +160,34 @@ padding:5px;
         align-items: center;
     }
 
+    img:hover {
+        filter:none;
+    }
+
     .kt_img {
         width:400px;
         height:320px;
+        margin-left:0;
+        margin-right:0;
+        margin-top:50px;
+        margin-bottom:50px;
     }
 
     figure {
         text-align:center;
+        line-height:20px;
     }
     figcaption {
         font-size: 30px;
         text-align:center;
+        margin-top: -75px;
+        color:white;
     }
 
     .aboutktcap {
         margin-left:50px;
         font-size:20px;
+        color:black;
         
     }
     label {
@@ -177,6 +199,7 @@ padding:5px;
         width:100%;
         display:none;
     }
+
     .menu a {
         display:block;
         border-bottom: 1px solid #EAEAEB;
@@ -192,7 +215,9 @@ padding:5px;
 
     .form {
         width:100%;
-        margin:0;
+        margin-left:0;
+        margin-right:0;
+        margin-top:30px;
         font-size: 20px;
     }
 
