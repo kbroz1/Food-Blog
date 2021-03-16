@@ -49,7 +49,7 @@ h1 {
 .intro {
     margin-left: 20px;
     margin-right: 20px;
-    font-size: 22px;
+    font-size: 25px;
     font-style:italic;
 
 }
@@ -60,6 +60,7 @@ h6 {
     font-size: 25px;
     padding: 10px;
     color:papayawhip;
+    border: white 1px solid;
     width:fit-content;
     margin-left:32%;
     margin-bottom:5px;
@@ -90,7 +91,10 @@ a {
 .container1{
     display:flex;
     flex-direction:row;
-    margin-left: 15%;
+    background-color:white;
+    width: 900px;
+    height:450px;
+    margin: 20px 0 0 270px;
 }
 .container2, .container3, .container4, .container5 {
     display:flex;
@@ -106,7 +110,7 @@ a {
 
 .flex-two {
     width: 40%;
-   font-size:20px;
+   font-size:18px;
    padding: 5px;
    
 }
@@ -116,6 +120,7 @@ h4 {
     background-color:olivedrab;
     color:white;
     padding: 5px;
+    text-align:center;;
 }
 
 
@@ -158,11 +163,12 @@ img {
     width: 200px;
     height:220px;
     align-items: center;
-    margin-top: 75px;
-    margin-left: 10px;
-    margin-right:10px;
+    margin: 100px 50px 50px 50px;
     border-radius: 10%;
 
+}
+footer {
+    text-align:center;
 }
 
 .social {
@@ -173,6 +179,10 @@ img {
 #ig {
     height: 40px;
     width:55px;
+}
+
+footer a {
+   color:hsl(51, 88%, 68%);
 }
 
 @media only screen and (max-width:500px) {
@@ -199,6 +209,11 @@ img {
         border-radius: 10%;
     }
 
+    h6 {
+        margin:0 0 30px 25px;
+        text-align:center;
+    }
+
     img, .intropic, .step1photo, .step2photo, .step3photo {
         display:flex;
         height: 100%;
@@ -207,6 +222,8 @@ img {
         flex-wrap:wrap;
     }
 
+    
+
     .container1, .container2, .container3, .container4, .container5 {
         display:flex;
         flex-direction: column;
@@ -214,11 +231,23 @@ img {
     
     }
 
-    .flex-two {
-        font-size: 30px;
-        margin:0;
-        width:100%;
+    .container1 {
+        width: 100%;
+        height:100%;
     }
+
+    .intropic {
+        height: 75%;
+        width:75%;
+        margin:  5px 0 5px 60px ;
+    }
+
+    .flex-two {
+        font-size: 22px;
+        width: 80%;
+        margin-left: 40px;
+    }
+
 
 
 
@@ -233,6 +262,10 @@ img {
     footer {
 display:flex;
 flex-direction:row;
+justify-content:center;
     }
+
+
+
     
 } 
